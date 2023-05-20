@@ -1,7 +1,7 @@
 #!/bin/sh
 
 echo "-- Installing Dependencies --"
-sudo apt-get install ninja-build gettext cmake unzip curl
+sudo pacman -S base-devl cmake unzip ninja curl
 
 while true; do
 read -p "Would you like to copy this configuraion? (y/n) " yn
