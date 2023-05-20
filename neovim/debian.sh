@@ -7,7 +7,7 @@ while true; do
 read -p "Would you like to copy this configuraion? (y/n) " yn
 case $yn in
     [yY] ) echo "-- Copying Configuration --"
-        cp -r ./config ~/.config/nvim
+        cp -r ./nvim ~/.config
         break;;
     [nN] ) exit;;
     * ) echo "invalid response";;
