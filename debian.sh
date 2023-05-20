@@ -3,9 +3,6 @@
 # FOR DEBIAN-BASED DISTROS
 
 echo "-- Initialize Automatic Setup & Ricing --"
-cd ~
-mkdir TEMP
-cd TEMP
 
 echo "-- SetUp Packages --"
 sudo apt update && sudo apt upgrade -y
