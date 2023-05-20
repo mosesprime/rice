@@ -47,6 +47,8 @@ return require('packer').startup(function (use)
 
     -- colorschemes
 	use 'navarasu/onedark.nvim'
+    use 'EdenEast/nightfox.nvim'
+    use 'tanvirtin/monokai.nvim'
 
 	if is_bootstrap then
 		require('packer').sync()
