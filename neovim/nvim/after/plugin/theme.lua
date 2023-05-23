@@ -17,4 +17,6 @@ require('monokai').setup {
     italics = false
 }
 
+require('dracula').setup {}
+
 vim.cmd [[colorscheme onedark]]
