@@ -1,0 +1,7 @@
+require('core.config.mason')
+require('core.config.lualine')
+require('core.config.nvim-tree')
+require('core.config.treesitter')
+require('core.config.telescope')
+require('core.config.colorscheme')
+require('core.config.onedark')
