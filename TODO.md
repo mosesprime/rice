@@ -1,0 +1,3 @@
+- add universal themes
+- add nvim keymaps
+- add documentation

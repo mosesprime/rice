@@ -3,6 +3,7 @@
 # FOR DEBIAN-BASED DISTROS
 
 echo "-- Initialize Automatic Setup & Ricing --"
+mkdir TEMP
 
 echo "-- SetUp Packages --"
 sudo apt update && sudo apt upgrade -y
@@ -18,4 +19,13 @@ rustup component add rust-analyzer
 sh ./neovim/debian.sh
 
 echo "-- Cleaning Up --"
+while true; do
+read -p "Would you like to clean up TEMP folder? (y/n) " yn
+case $yn in
+    [yY] ) rm -rf TEMP
+        break;;
+    [nN] ) exit;;
+    * ) echo "invalid response";;
+esac
+done
 sudo apt autoremove -y

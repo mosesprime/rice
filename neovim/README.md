@@ -9,8 +9,8 @@ cd rice/neovim
 2. Run setup script for your OS.
 ```sh
 # Debian-based
-./debian.sh
+bash ./debian.sh
 ```
 
 ## Features & Plugins
-
+- WIP
