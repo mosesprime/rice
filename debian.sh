@@ -18,14 +18,15 @@ rustup component add rust-analyzer
 # install & configure NeoVim
 sh ./neovim/debian.sh
 
-echo "-- Cleaning Up --"
 while true; do
-read -p "Would you like to clean up TEMP folder? (y/n) " yn
+read -p "
+Cleanup TEMP repository? (y/n) " yn
 case $yn in
-    [yY] ) rm -rf TEMP
+    [yY] ) echo "-- Cleaning Up --"
+        rm -rf TEMP
+        sudo apt autoremove -y
         break;;
     [nN] ) exit;;
     * ) echo "invalid response";;
 esac
 done
-sudo apt autoremove -y
