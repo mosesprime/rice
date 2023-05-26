@@ -1,4 +1,6 @@
 require('core.config.mason')
+require('core.config.lspconfig')
+require('core.config.completions')
 require('core.config.lualine')
 require('core.config.nvim-tree')
 require('core.config.treesitter')

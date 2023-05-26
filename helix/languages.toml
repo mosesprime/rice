@@ -1,9 +1,0 @@
-[[language]]
-name = "rust"
-
-[language.language-server]
-command = "rustup"
-args = ["run", "nightly", "rust-analyzer"]
-
-[language.config.check]
-command = "clipppy"

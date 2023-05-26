@@ -1,3 +1,12 @@
-- add universal themes
+- add more apps
+- add arch support
 - add nvim keymaps
+- add nvim-telescope algos
+- add universal theme
 - add documentation
+- add shell personalization
+- add shell exa aliases
+- add go install script
+- add git config script
+- refactor nerdfont install
+- try hrsh7th cmp only?
