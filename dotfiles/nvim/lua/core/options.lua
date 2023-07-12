@@ -19,7 +19,9 @@ vim.o.hlsearch = false
 vim.o.incsearch = true
 
 -- other
+vim.o.swapfile = false
 vim.o.scrolloff = 5
+vim.o.sidescrolloff = 10
 vim.o.mouse = 'a'
 vim.o.breakindent = true
 vim.o.undofile = true
