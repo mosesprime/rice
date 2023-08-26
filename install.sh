@@ -41,7 +41,7 @@ case $distro in
     "Arch") pacman_install git python3 htop curl wget gzip unzip cmake;;
 esac
 
-########### set up git/github
+# set up global git
 read -p "### Enter your git username: " git_username
 git config --global user.name $git_username
 read -p "### Enter your git email: " git_email
@@ -66,7 +66,7 @@ while true; do
     read -p "### Install the Rust Toolchain? (y/n) " rust_yn
     case $rust_yn in
         [yY]) curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y;
-		source "$HOME/.cargo/env";
+		    source "$HOME/.cargo/env";
             rustup toolchain install nightly;
             rustup target add wasm32-unknown-unknown wasm32-wasi;
             rustup component add rust-analyzer;
@@ -110,9 +110,6 @@ while true; do
         *) warn "Invalid option.";;
     esac
 done
-
-
-######### WIP
 
 # other
 case $distro in
