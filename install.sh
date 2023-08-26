@@ -104,7 +104,7 @@ done
 while true; do
     read -p "### Copy the NeoVim configuration? (y/n) " nvim_conf_yn
     case $nvim_conf_yn in 
-        [yY]) cp -r ./dotfiles/nvim ~/.config;
+        [yY]) cp -r ./dotfiles/nvim ~/.config/nvim;
             break;;
         [nN]) break;;
         *) warn "Invalid option.";;
