@@ -47,6 +47,18 @@ git config --global user.name $git_username
 read -p "### Enter your git email: " git_email
 git config --global  user.email $git_email
 
+while true; do 
+    read -p "### Install TMUX? (y/n) " tmux_yn
+    case $tmux_yn in 
+        [yY]) apt_install tmux;
+            pacman_intsall tmux;
+            break;;
+        [nN]) warn "Skipping tmux install.";
+            break;;
+        *) warn "Invalid option."
+    esac
+done
+
 while true; do
     read -p "### Install the Hack NerdFont? (y/n) " font_yn
     case $font_yn in
