@@ -1,4 +1,2 @@
-require('core.remap')
-require('core.options')
-require('core.plugins')
-require('core.config')
+-- init lazy.nvim
+require("config.lazy")
