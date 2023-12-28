@@ -1,20 +1,31 @@
--- telescope fuzzy finding
+-- telescope 
 return {
+    -- sets the vim.ui.select to telescope
+    {
+        "nvim-telescope/telescope-ui-select.nvim"
+    },
 	{
 		"nvim-telescope/telescope.nvim",
-		-- TODO: add keymaps
-		events = "VeryLazy",
+		keys = {
+            -- TODO: add keymap
+        },
 		opts = {
 			defaults = {
-				-- TODO:
+				-- TODO: add defaults
 			},
 		},
 		dependencies = {
-			"nvim-telescope/telescope-fzf-native.nvim",
-			build = "make",
-			config = function()
-				require("telescope").load_extenssion("fzf")
-			end,
+            -- native C fuzzy finding algo
+			{
+				"nvim-telescope/telescope-fzf-native.nvim",
+				build = "make",
+				config = function()
+					require("telescope").load_extenssion("fzf")
+				end,
+			},
+			{
+				"nvim-lua/plenary.nvim",
+			},
 		},
 	},
 }

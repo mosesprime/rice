@@ -1,8 +1,10 @@
+-- status bar
 return {
 	{
 		"nvim-lualine/lualine.nvim",
-		opts = function()
-			return require("lualine").setup({
+        event = "VeryLazy",
+		config = function()
+			require("lualine").setup({
 				options = {
 					icons_enabled = true,
 					theme = "auto",

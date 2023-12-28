@@ -2,6 +2,7 @@
 return {
 	{
 		"nvim-treesitter/nvim-treesitter",
+        build = ":TSUpdate",
 		opts = {
 			ensure_installed = {
 				"c",
@@ -14,6 +15,10 @@ return {
 				"nasm",
 				"html",
 				"bash",
+                "json",
+                "regex",
+                "markdown",
+                "markdown_inline",
 			},
 			sync_install = false,
 			auto_install = true,
@@ -29,6 +34,9 @@ return {
 					end
 				end,
 			},
+            indent = {
+                enable = true,
+            },
 		},
 	},
 }

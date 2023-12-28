@@ -31,3 +31,5 @@ vim.o.updatetime = 250
 vim.wo.signcolumn = "yes"
 vim.o.termguicolors = true
 vim.o.completeopt = "menuone,noselect"
+vim.o.confirm = true
+
