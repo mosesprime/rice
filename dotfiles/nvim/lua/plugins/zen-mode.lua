@@ -1,4 +1,8 @@
 -- zen mode for less clutter while editing
+-- https://github.com/folke/zen-mode.nvim
 return {
-    -- TODO: add here
+    "folke/zen-mode.nvim",
+    opts = {
+        -- TODO: add configuration
+    },
 }
