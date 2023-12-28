@@ -21,14 +21,15 @@ return {
                         require("luasnip").lsp_expand(args.body)
                     end,
                 },
-                mapping = {
+                mapping = cmp.mapping.preset.insert({
                     -- TODO: add cmp keymaps
-                },
+                }),
                 sources = cmp.config.sources({
                     { name = "nvim_lsp" },
                     { name = "luasnip" },
                     { name = "path" },
                     { name = "rust_analyzer" },
+                    { name = "crates" },
                 }, {
                     { name = "buffer" },
                 }),

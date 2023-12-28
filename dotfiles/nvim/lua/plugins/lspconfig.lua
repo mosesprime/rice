@@ -5,9 +5,17 @@ return {
 		dependencies = {},
         config = function()
             local lspconfig = require("lspconfig")
-            lspconfig.lua_ls.setup({})
-            lspconfig.rust_analyzer.setup({})
-            lspconfig.clangd.setup({})
+            local capabilities = require("cmp_nvim_lsp").default_capabilities()
+
+            lspconfig.lua_ls.setup({
+                capabilities = capabilities,
+            })
+            lspconfig.rust_analyzer.setup({
+                capabilities = capabilities,
+            })
+            lspconfig.clangd.setup({
+                capabilities = capabilities,
+            })
             
             vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
             vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
