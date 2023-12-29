@@ -22,6 +22,8 @@ return {
                     end,
                 },
                 mapping = cmp.mapping.preset.insert({
+                    --["<C-Space>"] = cmp.mapping.complete(),
+                    ["<CR>"] = cmp.mapping.confirm({ select = true }),
                     -- TODO: add cmp keymaps
                 }),
                 sources = cmp.config.sources({
