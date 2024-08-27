@@ -1,0 +1,33 @@
+theme = "onedark"
+
+[editor]
+line-number = "relative"
+scrolloff = 8
+auto-format = false
+text-width = 120
+true-color = true
+
+[editor.statusline]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.whitespace]
+
+[editor.indent-guides]
+render = true
+
+[editor.gutters]
+
+[editor.soft-wrap]
+
+[editor.smart-tab]
