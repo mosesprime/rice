@@ -11,7 +11,7 @@ return {
 		opts = {
 			ensure_installed = {
 				"lua_ls", -- LUA
-                --"asm-lsp",
+                "asm_lsp",
                 --"asmfmt",
                 --"ast-grep", 
                 --"html-lsp", -- HTML
