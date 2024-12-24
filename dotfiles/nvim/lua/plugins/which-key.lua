@@ -1,4 +1,15 @@
 -- keymap helper
 return {
-    -- TODO: add here
+	"folke/which-key.nvim",
+	event = "VeryLazy",
+	opts = {},
+	keys = {
+		{
+			"<leader>?",
+			function ()
+				require("which-key").show({ global = false })
+			end,
+			desc = "Show Keymaps (which-key)",
+		},
+	},
 }
