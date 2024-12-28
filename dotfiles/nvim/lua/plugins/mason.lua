@@ -19,7 +19,7 @@ return {
                 --"json-lsp", -- JSON
                 --"texlab", -- LaTeX
                 --"marksman", -- Markdown
-                --"ols", -- Odin
+                "ols", -- Odin
 				"clangd", -- C/C++
 				"rust_analyzer", -- Rust
                 --"rustfmt", -- Rust
