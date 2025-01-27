@@ -8,5 +8,3 @@ git clone https://github.com/mosesprime/rice
 cd rice
 bash install.sh
 ```
-
-## NeoVim - Editor

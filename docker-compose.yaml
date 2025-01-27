@@ -1,0 +1,5 @@
+include:
+  - docker/pihole/compose.yaml
+  - docker/syncthing/compose.yaml
+  - docker/traefik/compose.yaml
+  - docker/wg-easy/compose.yaml
