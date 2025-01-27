@@ -3,11 +3,11 @@ services:
     image: docker.io/library/traefik:v3.3
     container_name: traefik
     environment:
-      - CF_DNS_API_TOKEN=${CD_DNS_API_TOKEN}
+      - CF_DNS_API_TOKEN=${CF_DNS_API_TOKEN}
     volumes:
       - ${DOCKER_SOCK}:/run/docker.sock:ro
-      - ./config:/etc/traefik:ro
-      - ./certs:/var/traefik/certs:rw
+      - ${TRAEFIK_DATA}/config:/etc/traefik:ro
+      - ${TRAEFIK_DATA}/certs:/var/traefik/certs:rw
     ports:
       - 80:80
       - 443:443
@@ -15,7 +15,3 @@ services:
     networks:
       - frontend
     restart: unless-stopped
-
-networks:
-  frontend:
-    external: true

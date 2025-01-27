@@ -9,7 +9,7 @@ services:
       - WG_DEFAULT_DNS=10.10.1.3
       - WG_DEFAULT_ADDRESS=10.10.1.x
     volumes: 
-      - ${CONFIG_DIR}/wg-easy:/etc/wireguard
+      - ${WG_EASY_DATA}:/etc/wireguard
     ports:
       - "51820:51820/udp"
       - "51821:51821/tcp"

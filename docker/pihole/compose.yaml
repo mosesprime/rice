@@ -8,8 +8,8 @@ services:
       - TZ=${TZ}
       - WEBPASSWORD=${PIHOLE_PASSWORD}
     volumes:
-      - ${CONFIG_DIR}/pihole/pihole:/etc/pihole
-      - ${CONFIG_DIR}/pihole/dnsmasq.d:/etc/dnsmasq.d
+      - ${PIHOLE_DATA}/pihole:/etc/pihole
+      - ${PIHOLE_DATA}/dnsmasq.d:/etc/dnsmasq.d
     ports:
       - 53:53/tcp
       - 53:53/udp

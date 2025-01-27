@@ -7,7 +7,7 @@ services:
       - PUID=${PUID}
       - PGID=${PGID}
     volumes:
-      - ${CONFIG_DIR}/syncthing:/var/syncthing
+      - ${SYNCTHING_DATA}:/var/syncthing
     ports:
       - 8384:8384 # web UI
       - 22000:22000/tcp # TCP file transfers
