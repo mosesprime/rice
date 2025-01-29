@@ -18,7 +18,7 @@ return {
                 --"htmx-lsp", -- HTMX
                 --"json-lsp", -- JSON
                 --"texlab", -- LaTeX
-                --"marksman", -- Markdown
+                "marksman", -- Markdown
                 "ols", -- Odin
 				"clangd", -- C/C++
 				"rust_analyzer", -- Rust
