@@ -89,6 +89,17 @@ while true; do
     esac
 done
 
+# https://nixos.org/download/
+while true; do
+    read -p "### Install Nix pakcakge manager? (y/n) " nix_yn
+    case $nix_yn in
+        [yY]) sh <(curl -L https://nixos.org/nix/install) --no-daemon;
+            break;;
+        [nN]) break;;
+        *) warn "Invalid option.";;
+    esac
+done
+
 # https://github.com/alacritty/alacritty
 
 # https://github.com/ogham/exa
