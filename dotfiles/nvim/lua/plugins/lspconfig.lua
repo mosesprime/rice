@@ -31,6 +31,9 @@ return {
             lspconfig.marksman.setup({
                 capabilities = capabilities,
             })
+            lspconfig.nil_ls.setup({
+                capabilities = capabilities,
+            })
             vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
             vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
         end,

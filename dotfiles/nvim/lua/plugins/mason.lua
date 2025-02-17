@@ -25,6 +25,7 @@ return {
                 --"rustfmt", -- Rust
                 "gopls", -- Go
                 "zls", -- Zig
+                "nil_ls", -- Nix
 			},
 		},
 	},
