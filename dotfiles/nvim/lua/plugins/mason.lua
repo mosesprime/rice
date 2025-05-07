@@ -1,13 +1,13 @@
 return {
     {
-		"williamboman/mason.nvim",
+		"mason-org/mason.nvim",
         lazy = false,
 		config = function()
 			require("mason").setup()
 		end,
 	},
 	{
-		"williamboman/mason-lspconfig",
+		"mason-org/mason-lspconfig",
 		opts = {
 			ensure_installed = {
 				"lua_ls", -- LUA
